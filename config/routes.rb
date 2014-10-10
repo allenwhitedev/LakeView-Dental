@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'public_pages/home'
+
+  match '/home', to: 'public_pages#home', via: 'get'
+
+  match '/about', to: 'public_pages#about', via: 'get'
+
+  get 'public_pages/contact'
+
+  match '/location', to: 'public_pages#location', via: 'get'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

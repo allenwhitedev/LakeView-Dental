@@ -1,0 +1,30 @@
+@import 'bootstrap';
+
+body {
+	padding-top: 16px;
+	background-color: #CCCCFF; 
+}
+
+.navbar navbar-inverse navbar-fixed-top {
+/*	background-color: #6666FF; */
+}
+
+.nav nav-pills nav-justified {
+	margin-bottom: 160px;
+	background-color: red;	
+}
+
+.buh {
+	font-size: 1.25em;
+	/* background-color: #428bca; */
+	background-color: white;
+	color: black;
+	&:hover {
+		background-color: #99FFCC;
+		
+	}
+}
+
+#jmbotron {
+	background-color: #CCCCFF;
+}
