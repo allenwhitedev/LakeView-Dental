@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'public_pages/home'
+  root 'public_pages#home'
 
   match '/home', to: 'public_pages#home', via: 'get'
 
