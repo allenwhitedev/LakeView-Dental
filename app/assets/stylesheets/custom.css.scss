@@ -5,10 +5,6 @@ body {
 	background-color: #CCCCFF; 
 }
 
-.navbar navbar-inverse navbar-fixed-top {
-/*	background-color: #6666FF; */
-}
-
 .nav nav-pills nav-justified {
 	margin-bottom: 160px;
 	background-color: red;	
@@ -27,4 +23,31 @@ body {
 
 #jmbotron {
 	background-color: #CCCCFF;
+}
+
+.beach {
+	height: 100%;
+	width: 100%;
+}
+.Ingrid {
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+.col-md-4{
+	margin: 0 auto;
+}
+.dentist {
+	padding-top: 20px;
+	text-align: justify;
+}
+.address {
+	font-size: 50px;
+	padding-left: 100px;
+	text-decoration: underline;
+}
+.coral-springs {
+	padding-top: 10px;
+	padding-left: 100px;
+	font-size: 30px;
 }
