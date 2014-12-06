@@ -1,5 +1,4 @@
 @import 'bootstrap';
-@import 'AWDfw';
 
 .blue_back {
 	background: #428bca;
@@ -54,7 +53,7 @@ body {
 	margin: 0 auto;
 }
 .dentist {
-	@include margin-top(20px);
+	margin-top: 20px;
 	text-align: justify;
 }
 .address {
@@ -68,7 +67,15 @@ body {
 	font-size: 30px;
 }
 .info_column{
-	width: 30%;
+	width: 29%;
+
 	display: inline-block;
 	margin: auto calc(9% / 6);
+	transition: all 0.4s ease-in-out;
+	
+	&:hover{
+		border: 2px solid #fff;
+	}
 }
+
+
