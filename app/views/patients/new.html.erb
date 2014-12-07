@@ -1,18 +1,19 @@
 <div class="container margin_vertical_60px form">
-<div class="text-center text_black well" id="hide_me">
-<h1>New Patient Form goes here</h1>
+<div class="well blue_back well_top text-center", id="formtop1"><h3>New Patient</h3></div>
+<div class="text-center text_black well well_body" id="hide_me">
 
-<%= form_for @patient, id: 'first_form', remote: true do |f| %>
-	<%= f.label :first_name, class: "label" %> 
+
+<%= bootstrap_form_for @patient, layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-10", id: 'first_form', remote: true do |f| %>
+	<%#= f.label :first_name, class: "label" %> 
 	<%= f.text_field :first_name, class: "field"  %><br>
 	
-	<%= f.label :middle_initial, class: "label" %>
+	<%#= f.label :middle_initial, class: "label" %>
 	<%= f.text_field :middle_initial, class: "field" %><br>
 	
-	<%= f.label :last_name %>
+	<%#= f.label :last_name %>
 	<%= f.text_field :last_name %><br>
 
-	<%= f.submit "Create Patient Account", class: "submit_button" %>
+	<%= f.submit "Create Patient Account" %>
 <% end %>			
 
 
