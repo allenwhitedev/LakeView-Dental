@@ -1,0 +1,19 @@
+<div class="text-center text_black" id="hide_me">
+<h1>New Patient Form goes here</h1>
+
+<%= form_for @patient, id: 'first_form', remote: true do |f| %>
+	<%= f.label :first_name %> 
+	<%= f.text_field :first_name %><br>
+	
+	<%= f.label :middle_initial %>
+	<%= f.text_field :middle_initial %><br>
+	
+	<%= f.label :last_name %>
+	<%= f.text_field :last_name %><br>
+
+	<%= f.submit "Create Patient Account" %>
+<% end %>			
+
+
+</div>
+	<h1 id="after_first">Second Form</h1>

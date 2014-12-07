@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'public_pages#home'
 
+  resources :patients
+
   match '/home', to: 'public_pages#home', via: 'get'
 
   match '/about', to: 'public_pages#about', via: 'get'
