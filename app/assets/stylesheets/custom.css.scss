@@ -1,5 +1,7 @@
 @import 'bootstrap';
 
+
+/* modular classes */
 .blue_back {
 	background: #428bca;
 	border: 1px solid #428bca;
@@ -13,14 +15,23 @@
 	color: black;
 }
 
+.margin_vertical_60px {
+	margin: 60px auto;
+}
+
+
+
+
 body {
 	background-color: #CCCCFF; 
 	color: #fff;
 }
+
 .nav nav-pills nav-justified {
 	margin-bottom: 160px;
 	background-color: red;	
 }
+
 .buh {
 	font-size: 1.25em;
 	/* background-color: #428bca; */
@@ -30,9 +41,11 @@ body {
 		background-color: #99FFCC;		
 	}
 }
+
 #jmbotron {
 	background-color: #CCCCFF;
 }
+
 .beach {
 	height: 40em;
 	width: 100%;
@@ -88,3 +101,35 @@ body {
 	color: grey;
 }
 
+/* forms */
+
+.form {
+	max-width: 800px;
+}
+
+.submit_button {
+  font-size: 1.5rem; 
+  color: #fff; 
+  border: 1px solid #fff;
+  padding: 3px 6px;
+}
+
+.label {
+	margin-right: 5px;
+	font-size: 1em;
+	color: #428bca;
+}
+
+.field {
+  border: 0px solid #fff;
+  border-bottom: 1px solid grey;
+  height: 2em;
+  margin: 10px 0;
+  background: red;
+  border-bottom: 2px solid grey;
+}
+
+
+
+.field:focus {
+}
