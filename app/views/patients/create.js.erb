@@ -1,19 +1,31 @@
+//will put this somewhere that is application-wide for reuse
+
+function formTransition(old_form, pipe, next_form_area, partial, topper_target)
+{
+
 // apply css rules to already submitted form
-$("#hide_me").addClass("old_form") 
+$(old_form).addClass("old_form") 
 
 // Pipe transition to next form
-$("#pipe1").animate({ height: "500px" }, {duration: 500})
+$(pipe).animate({ height: "500px" }, {duration: 500})
 
+//wait for pipe animation so that it doesn't push next form
 setTimeout(continueExecution, 400)
 
 function continueExecution()
 {
 
 	// Render the next form
-	$("#after_first").html("<%= escape_javascript(render('patients/form2')) %>")
+	$(next_form_area).html(partial)
 	//should be 590px down
 
 	//scroll to next form
-	$('html, body').animate({ scrollTop: $("#le_patient_info").offset().top }, 1000)
+	$('html, body').animate({ scrollTop: $(topper_target).offset().top }, 1000)
 
 }
+
+} 
+
+formTransition("#hide_me", "#pipe1", "#after_first", "<%= escape_javascript(render('patients/form2')) %>", "#patient_info_topper")
+
+
