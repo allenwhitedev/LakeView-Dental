@@ -2,6 +2,7 @@
 
 
 /* modular classes */
+
 .blue_back {
 	background: #428bca;
 	border: 1px solid #428bca;
@@ -32,10 +33,10 @@
 	border-top-right-radius: 0px;
 	border-top: none;
 	padding-top: 40px;
+	font-size: 1.5rem;
 }
 
-
-
+/* ~~~~~~~~~~~~~~~~~~~~ */
 
 body {
 	background-color: #CCCCFF; 
@@ -47,7 +48,7 @@ body {
 	background-color: red;	
 }
 
-.buh {
+.old_header {
 	font-size: 1.25em;
 	/* background-color: #428bca; */
 	background-color: white;
@@ -111,15 +112,16 @@ body {
 	}
 }
 
-.old_form {
-	background: grey;
-	color: grey;
-}
 
 /* forms */
 
 .form {
 	max-width: 800px;
+}
+
+.old_form {
+	background: grey;
+	color: grey;
 }
 
 
