@@ -1,4 +1,19 @@
+// apply css rules to already submitted form
 $("#hide_me").addClass("old_form") 
-$("#pipe1").animate({ height: "500px" }, {duration: 1000})
-//$('html, body').animate({ scrollTop: $("#form_two").offset().top }, 2000)
-$("#after_first").html("<%= escape_javascript(render('patients/form2')) %>")
+
+// Pipe transition to next form
+$("#pipe1").animate({ height: "500px" }, {duration: 500})
+
+setTimeout(continueExecution, 400)
+
+function continueExecution()
+{
+
+	// Render the next form
+	$("#after_first").html("<%= escape_javascript(render('patients/form2')) %>")
+	//should be 590px down
+
+	//scroll to next form
+	$('html, body').animate({ scrollTop: $("#le_patient_info").offset().top }, 1000)
+
+}
