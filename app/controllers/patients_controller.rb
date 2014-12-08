@@ -11,7 +11,7 @@ def create
 	@patient = Patient.new(patient_params)
 	if @patient.save
 		respond_to do |format|
-			format.html	{ redirect_to root_url }
+			format.html	{ @current_patient = Patient.find(@patient.id) }
 			format.js	{ @current_patient = Patient.find(@patient.id) }
 		end
 	else
@@ -24,7 +24,15 @@ end
 
 def patient_info
 	@current_patient = Patient.find(params[:current_patient_id])
-	@current_patient.create_patient_info!
+	if @current_patient.create_patient_info!
+		respond_to do |format|
+		format.html { @current_patient }
+		format.js { @current_patient }
+	end
+	else
+		render 'patients/new'
+	end
+
 end
 
 

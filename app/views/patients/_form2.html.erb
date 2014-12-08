@@ -1,10 +1,8 @@
-# Patient Info			
-
 <div class="container margin_vertical_60px form">
-<div class="well blue_back well_top text-center", id="formtop1"><h3>New Patient</h3></div>
+<div class="well blue_back well_top text-center", id="formtop1"><h3>Patient Info</h3></div>
 <div class="text-center text_black well well_body" id="hide_me">
 
-	<%= bootstrap_form_for @current_patient.build_patient_info(patient_id: @current_patient.id), layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-10", id: 'first_form', remote: true do |f| %>
+	<%= bootstrap_form_for @current_patient.build_patient_info(patient_id: @current_patient.id), layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-10", id: 'second_form', remote: true do |f| %>
 
 			<%= hidden_field_tag :current_patient_id, @current_patient.id %>
 
@@ -40,3 +38,4 @@
 
 </div>
 </div>
+<h1 id="after_second">Second Form</h1>
