@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   match '/about', to: 'public_pages#about', via: 'get'
 
+  match 'patient_infos', to: 'patients#patient_info', via: 'post'
+
   get 'public_pages/contact'
 
   match '/location', to: 'public_pages#location', via: 'get'

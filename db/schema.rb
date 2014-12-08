@@ -11,7 +11,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141206184636) do
+ActiveRecord::Schema.define(version: 20141208043545) do
+
+  create_table "patient_infos", force: true do |t|
+    t.integer  "patient_id"
+    t.string   "address"
+    t.string   "email"
+    t.string   "city"
+    t.string   "state"
+    t.integer  "zipcode"
+    t.boolean  "sex"
+    t.date     "birthdate"
+    t.string   "relationship_status"
+    t.string   "employer_or_school"
+    t.string   "occupation"
+    t.string   "employer_or_school_address"
+    t.string   "employer_or_school_phone"
+    t.string   "spouse_name"
+    t.date     "spouse_birthdate"
+    t.integer  "spouse_ss"
+    t.string   "spouse_employer"
+    t.string   "referrer"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "patient_infos", ["patient_id"], name: "index_patient_infos_on_patient_id", unique: true
 
   create_table "patients", force: true do |t|
     t.string   "first_name"

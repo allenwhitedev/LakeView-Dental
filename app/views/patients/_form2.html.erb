@@ -1,1 +1,34 @@
-<h1>This is the second form</h1>
+# Patient Info			
+
+<div class="container margin_vertical_60px form">
+<div class="well blue_back well_top text-center", id="formtop1"><h3>New Patient</h3></div>
+<div class="text-center text_black well well_body" id="hide_me">
+
+	<%= bootstrap_form_for @current_patient.build_patient_info(patient_id: @current_patient.id), layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-10", id: 'first_form', remote: true do |f| %>
+
+			<%= f.text_field :address %>
+			<%= f.text_field :email %>
+			<%= f.text_field :city %>
+			<%= f.text_field :state %>
+			<%= f.number_field :zipcode %>
+			
+			<%= f.check_box :sex %>
+			<%= f.date_field :birthdate %>
+			<%= f.text_field :relationship_status %>
+			
+			<%= f.text_field :employer_or_school %>
+			<%= f.text_field :occupation %>
+			<%= f.text_field :employer_or_school_address %>
+			<%= f.text_field :employer_or_school_phone %>
+
+			<%= f.text_field :spouse_name %>
+			<%= f.date_field :spouse_birthdate %>
+			<%= f.number_field :spouse_ss %>
+			<%= f.text_field :spouse_employer %>
+
+			<%= f.text_field :referrer %>
+
+			<% end %>
+
+</div>
+</div>
