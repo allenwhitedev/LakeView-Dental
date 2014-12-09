@@ -5,12 +5,12 @@
 
 <%= bootstrap_form_for @patient, layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-10", id: 'first_form', remote: true do |f| %>
 	 
-	<%= f.text_field :first_name %><br>
+	<%= f.text_field :first_name %>
 	
 	
-	<%= f.text_field :middle_initial%><br>
+	<%= f.text_field :middle_initial%>
 	
-	<%= f.text_field :last_name %><br>
+	<%= f.text_field :last_name %>
 
 	<%= f.submit "Create Patient Account" %>
 <% end %>			
