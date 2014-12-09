@@ -32,7 +32,18 @@ def patient_info
 	else
 		render 'patients/new'
 	end
+end
 
+def dental_insurance
+	@current_patient = Patient.find(params[:current_patient_id])
+	if @current_patient.create_dental_insurance!
+		respond_to do |format|
+			format.html { @current_patient }
+			format.js { @current_patient }
+		end
+	else
+		render 'patients/new'
+	end
 end
 
 

@@ -1,7 +1,37 @@
 <div class="container margin_vertical_60px form formy2">
 <div class="well blue_back well_top text-center", id="formtop3"><h3 id="dental_insurance_topper">Dental Insurance</h3></div>
 <div class="text-center text_black well well_body" id="hide_me form_two">
-<h1>Here's the dental insurance form</h1>
+
+		<%= bootstrap_form_for @current_patient.build_dental_insurance(patient_id: @current_patient.id), layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-10", id: 'third_form', remote: true do |f| %>
+
+			<%= hidden_field_tag :current_patient_id, @current_patient.id %>
+
+			<!-- Dental Insurance -->
+			<%= f.text_field :account_owner %>
+			<%= f.text_field :account_owner_to_patient_relationship %>
+			<%= f.text_field :account_owner_insurance_company %>
+			<%= f.number_field :account_owner_group_number %>
+			<%= f.check_box :account_owner_additional_insurance %>
+
+			<%= f.text_field :subscriber_name %>
+			<%= f.date_field :subscriber_birthdate %>
+			<%= f.number_field :subscriber_ss %>
+			<%= f.text_field :subsriber_relationship_to_patient %>
+			<%= f.text_field :subscriber_insurance_company %>
+			<%= f.number_field :subscriber_group_number %>
+
+			<!-- Release -->
+			<%= f.text_field :name_of_insurance_company %>
+			<%= f.text_field :doctor_name %>
+			<%= f.text_field :patient_signature %>
+			<%= f.text_field :printed_signature %>
+			<%= f.date_field :signature_date %>
+			<%= f.text_field :signer_relationship_to_patient %>
+
+			<%= f.submit "Add Dental Insurance Info" %>
+
+		<% end %>
+
 </div>
 <div id="pipe3" class="pipe blue_back center-block"></div>
 </div>
