@@ -1,0 +1,55 @@
+<div class="container margin_vertical_60px form formy2">
+<div class="well blue_back well_top text-center", id="formtop4"><h3 id="dental_history_topper">Dental History</h3></div>
+<div class="text-center text_black well well_body" id="hide_me4 form_four">
+
+	<%= bootstrap_form_for @current_patient.build_dental_history(patient_id: @current_patient.id), layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-10", id: 'fourth_form', remote: true do |f| %>
+
+	<%= hidden_field_tag :current_patient_id, @current_patient.id %>
+
+		<!-- Dental History -->
+			<%= f.text_field :reason_for_visit %>
+			<%= f.text_field :former_dentist %>
+			<%= f.text_field :former_dentist_city_or_state %>
+			<%= f.date_field :last_dental_visit %>
+			<%= f.date_field :last_dental_xrays %>
+
+			<%= f.check_box :bad_breath %>
+			<%= f.check_box :bleeding_gums %>
+			<%= f.check_box :blisters_on_lips_or_mouth %>
+
+			<%= f.check_box :burning_sensation_on_tongue %>
+			<%= f.check_box :chew_on_one_side_of_mouth %>
+			<%= f.check_box :cigarette_pipe_or_cigar_smoking %>
+			<%= f.check_box :clicking_or_popping_jaw %>
+			<%= f.check_box :dry_mouth %>
+			<%= f.check_box :fingernail_biting %>
+			<%= f.check_box :food_collection_between_teeth %>
+			<%= f.check_box :foreign_objects %>
+			<%= f.check_box :grinding_teeth %>
+			<%= f.check_box :gums_swollen_or_tender %>
+			<%= f.check_box :jaw_pain_or_tiredness %>
+			<%= f.check_box :lip_or_cheek_biting %>
+			<%= f.check_box :loose_teeth_or_broken_fillings %>
+
+			<%= f.check_box :mouth_breathing %>
+			<%= f.check_box :mouth_pain_brushing %>
+			<%= f.check_box :orthodontic_treatment %>
+			<%= f.check_box :pain_around_ear %>
+			<%= f.check_box :periodontal_treatment %>
+			<%= f.check_box :sensitivity_to_cold %>
+			<%= f.check_box :sensitivity_to_heat %>
+			<%= f.check_box :sensitivity_to_sweets %>
+			<%= f.check_box :sensitivity_when_biting %>
+			<%= f.check_box :sores_or_growths_in_mouth %>
+
+    	<%= f.text_field :flossing_frequency %>
+    	<%= f.text_field :brushing_frequency %>
+			
+			<%= f.submit "Finalize Patient Info"  %>
+
+	<% end %>
+
+</div>
+<div id="pipe4" class="pipe blue_back center-block"></div>
+</div>
+<span id="after_fourth"></span>

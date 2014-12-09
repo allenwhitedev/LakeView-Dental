@@ -46,6 +46,18 @@ def dental_insurance
 	end
 end
 
+def dental_history
+	@current_patient = Patient.find(params[:current_patient_id])
+	if @current_patient.create_dental_history!
+		respond_to do |f|
+			f.html  
+			f.js 
+		end
+	else
+		render 'patients/new'
+	end
+end 
+
 
 
 private

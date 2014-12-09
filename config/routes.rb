@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   match '/location', to: 'public_pages#location', via: 'get'
   match 'patient_infos', to: 'patients#patient_info', via: 'post'
   match 'dental_insurances', to: 'patients#dental_insurance', via: 'post'
+  match 'dental_histories', to: 'patients#dental_history', via: 'post'
 
   
 
