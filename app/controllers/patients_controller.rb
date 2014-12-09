@@ -26,8 +26,8 @@ def patient_info
 	@current_patient = Patient.find(params[:current_patient_id])
 	if @current_patient.create_patient_info!
 		respond_to do |format|
-		format.html { @current_patient }
-		format.js { @current_patient }
+			format.html { @current_patient }
+			format.js { @current_patient }
 	end
 	else
 		render 'patients/new'
