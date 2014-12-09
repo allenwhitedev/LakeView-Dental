@@ -1,6 +1,6 @@
 <div class="container margin_vertical_60px form formy2">
 <div class="well blue_back well_top text-center", id="formtop1"><h3 id="patient_info_topper">Patient Info</h3></div>
-<div class="text-center text_black well well_body" id="hide_me form_two">
+<div class="text-center text_black well well_body" id="hide_me2 form_two">
 
 	<%= bootstrap_form_for @current_patient.build_patient_info(patient_id: @current_patient.id), layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-10", id: 'second_form', remote: true do |f| %>
 
@@ -37,5 +37,6 @@
 			<% end %>
 
 </div>
+<div id="pipe2" class="blue_back center-block"></div>
 </div>
 <h1 id="after_second">Second Form</h1>
