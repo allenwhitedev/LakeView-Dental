@@ -134,5 +134,28 @@ input {
 }
 
 
+/* location */
+.gmap_container {
+	padding: 10px;
+	display: inline-block;
+}
 
+.smaller_card {
+	width: 18%;
+}
 
+ .google-maps {
+        position: relative;
+        padding-bottom: 50%; 
+        height: 1em;
+        overflow: hidden;
+        width: 50%;
+        border: 5px solid #428bca; 
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
