@@ -66,6 +66,18 @@ label {
 
 /* ~~~~~~~~~~~~~~~~~~~~ */
 
+/* media queries */
+
+@media screen and (max-width: 1200px) {
+	.info_column {
+		width: 80%;
+	}
+}
+
+
+
+/* site stylings */
+
 body {
 	background-color: #CCCCFF; 
 	color: #fff;
@@ -179,6 +191,9 @@ input {
         overflow: hidden;
         width: 50%;
         border: 5px solid #428bca; 
+    &:hover {
+    	border: 5px solid #fff;
+    }
     }
     .google-maps iframe {
         position: absolute;
@@ -201,4 +216,11 @@ input {
 
 .checkbox_last {
 	margin-bottom: 20px;
+}
+
+
+/* overrides */
+
+.dentist {
+	text-align: left;
 }
