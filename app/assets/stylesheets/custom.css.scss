@@ -79,6 +79,7 @@ label {
 /* site stylings */
 
 body {
+	margin-top: 15px;
 	background-color: #CCCCFF; 
 	color: #fff;
 }
@@ -108,13 +109,22 @@ body {
 	position:absolute;
   left:0;
   top:0;
+
+  -webkit-filter: opacity(.2);
+  filter: opacity(.2);
+
 }
 
-.header {
-	margin-top: 10em;
+.header-text {
 	position: relative;
-	color: black;
-	margin-bottom: 15em;
+	color: rgba(255,255,255,.75);
+	margin-bottom: 2em;
+	font-size: 8em;
+	font-family: 'Marcellus', serif;
+}
+
+.tagline {
+	font-size: .4em;
 }
 
 .Ingrid {
