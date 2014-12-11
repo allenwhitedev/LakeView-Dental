@@ -103,7 +103,7 @@ body {
 	background-color: #CCCCFF;
 }
 
-.beach {
+.header_img {
 	height: 40em;
 	width: 100%;
 	position:absolute;
@@ -162,6 +162,10 @@ body {
 	}
 }
 
+.extra_info {
+	font-size: 1.5em;
+}
+
 
 /* forms */
 
@@ -191,7 +195,7 @@ input {
 }
 
 .smaller_card {
-	width: 18%;
+	width: 20%;
 }
 
  .google-maps {
