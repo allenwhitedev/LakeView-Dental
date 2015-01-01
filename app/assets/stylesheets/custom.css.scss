@@ -1,58 +1,19 @@
 @import 'bootstrap';
 
 
-/* modular classes & bootstrap overrides */
+/* MODULAR CLASSES & INITIAL BOOTSTRAP OVERRIDES */
 
-a {
-}
-a:link {
-    color: #fff;
-    text-decoration: none;
-}
- 
-a:active {
-    color: #fff;
-    text-decoration: none;
-}
- 
-a:visited {
-    color: #fff;
-    text-decoration: none;
-}
-a:hover {
-    color: #fff;
-    text-decoration: none;
-}
-
-label {
-	color: black;
-	font-weight: 500;
-}
-
-.hoverbox_white:hover {
-	text-decoration: underline;
-}
-
-.blue_back {
-	background: #428bca;
-	border: 1px solid #428bca;
-}
-.lblue_back {
-	background: #68A2D5;
-	border: 1px solid #68A2D5;	
-}
-
-.text_black {
-	color: black;
-}
-
-.text_blue {
-	color: #428bca;
-}
-
-.margin_vertical_60px {
-	margin: 60px auto;
-}
+a:link { color: #fff; text-decoration: none; }
+a:active { color: #fff; text-decoration: none; } 
+a:visited { color: #fff; text-decoration: none; }
+a:hover { color: #fff; text-decoration: none; }
+label { color: black; font-weight: 500; }
+.hoverbox_white:hover { text-decoration: underline; }
+.blue_back { background: #428bca; border: 1px solid #428bca; }
+.lblue_back { background: #68A2D5; border: 1px solid #68A2D5; }
+.text_black { color: black; }
+.text_blue { color: #428bca; }
+.margin_vertical_60px { margin: 60px auto; }
 
 .well_top {
 	margin-bottom: 0px;
@@ -61,7 +22,6 @@ label {
 	padding-top: 0px;
 	padding-bottom: 4px;
 }
-
 .well_body {
 	color: #fff;
 	border-top-left-radius: 0px;
@@ -71,10 +31,8 @@ label {
 	font-size: 1.5rem;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~ */
 
-
-/* site stylings */
+/* SITE STYLINGS */
 
 .bcontainer { width: 90%; margin: 0 auto; text-align: center; }
 .container { text-align: center; }
@@ -83,12 +41,9 @@ body {
 	background-color: #CCCCFF; 
 	color: #fff;
 }
-
-.nav nav-pills nav-justified {
-	margin-bottom: 160px;
-	background-color: red;	
+.nav nav-pills nav-justified { 
+	margin-bottom: 160px; background-color: red;	
 }
-
 .old_header {
 	font-size: 1.25em;
 	/* background-color: #428bca; */
@@ -98,10 +53,7 @@ body {
 		background-color: #99FFCC;		
 	}
 }
-
-#jmbotron {
-	background-color: #CCCCFF;
-}
+#jmbotron { background-color: #CCCCFF; }
 
 .header_img {
 	height: 40em;
@@ -112,9 +64,7 @@ body {
 
   -webkit-filter: opacity(.2);
   filter: opacity(.2);
-
 }
-
 .header-text {
 	position: relative;
 	color: rgba(255,255,255,.75);
@@ -122,24 +72,17 @@ body {
 	font-size: 8em;
 	font-family: 'Marcellus', serif;
 }
+.tagline { font-size: .4em; }
 
-.tagline {
-	font-size: .4em;
-}
-
-.Ingrid {
+.team_img {
 	height: 100%;
 	width: 100%;
 	margin: 0 auto;
 	border-radius: 1%;
 }
-.col-md-4{
-	margin: 0 auto;
-}
-.dentist {
-	margin-top: 20px;
-	text-align: justify;
-}
+.col-md-4 { margin: 0 auto; }
+.dentist { margin-top: 20px; text-align: justify; }
+
 .address {
 	font-size: 50px;
 	padding-left: 100px;
@@ -150,99 +93,64 @@ body {
 	padding-left: 100px;
 	font-size: 30px;
 }
-.info_column{
+.info_column {
 	width: 29%;
-
 	display: inline-block;
 	margin: auto calc(9% / 6);
 	transition: all 0.2s ease-in-out;
 	
-	&:hover{
-		border: 2px solid #fff;
-	}
+	&:hover { border: 2px solid #fff; }
 }
+.extra_info { font-size: 1.5em; }
 
-.extra_info {
-	font-size: 1.5em;
+
+/* FORMS */
+
+.form_footer { font-size: 5rem; }
+input { margin-bottom: 30px; }
+.form { max-width: 800px; }
+.old_form { background: grey; color: grey; }
+.pipe { width: .5rem; margin: -20px auto -60px auto; }
+
+
+/* LOCATION PAGE */
+
+.gmap_container { padding: 10px; display: inline-block; }
+.smaller_card { width: 20%; }
+
+.google-maps {
+  position: relative;
+  padding-bottom: 50%; 
+  height: 1em;
+  overflow: hidden;
+  width: 50%;
+  border: 5px solid #428bca; 
+
+	&:hover { border: 5px solid #fff; }
 }
-
-
-/* forms */
-
-.form_footer {
-	font-size: 5rem;
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
+.checkbox input { height: 1.5rem; width: 1.5rem; }    
 
-input {
-	margin-bottom: 30px;
-}
-
-.form {
-	max-width: 800px;
-}
-
-.old_form {
-	background: grey;
-	color: grey;
-}
-
-.pipe {
-	width: .5rem;
-	margin: -20px auto -60px auto;
-}
-
-
-/* location */
-.gmap_container {
-	padding: 10px;
-	display: inline-block;
-}
-
-.smaller_card {
-	width: 20%;
-}
-
- .google-maps {
-        position: relative;
-        padding-bottom: 50%; 
-        height: 1em;
-        overflow: hidden;
-        width: 50%;
-        border: 5px solid #428bca; 
-    &:hover {
-    	border: 5px solid #fff;
-    }
-    }
-    .google-maps iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100% !important;
-        height: 100% !important;
-    }
-
-.checkbox input {
-	height: 1.5rem;
-	width: 1.5rem;
-}    
-
-.checkbox {
+.checkbox { 
 	height: 4rem;
 	line-height: 2rem;
 	margin: 200px auto;
 }
+.checkbox_last { margin-bottom: 20px; }
 
-.checkbox_last {
-	margin-bottom: 20px;
-}
 
+/* MEDIA QUERIES FOR HOME PAGE (MOSTLY) */
 
 @media screen and (min-width: 1000px)
 {
 	.small_device_shown { display: none; }	
 }  
-
-/* media queries for home page (mostly) */
 
 @media screen and (max-width: 600px) 
 {
@@ -253,7 +161,7 @@ input {
 }
 
 
-/* media queries for directions page */
+/* MEDIA QUERIES FOR LOCATION PAGE */
 @media screen and (max-width: 1000px)
 {
 	.small_device_hidden { display: none; } 
@@ -261,8 +169,6 @@ input {
 	.small_device_shown: { display: block; }
 }
 
-/* overrides */
+/* OVERRIDES */
 
-.dentist {
-	text-align: left;
-}
+.dentist { text-align: left; }
