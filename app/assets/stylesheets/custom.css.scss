@@ -1,9 +1,8 @@
 @import 'bootstrap';
 
 
-/* modular classes */
+/* modular classes & bootstrap overrides */
 
-/* boootstrap overrides */
 a {
 }
 a:link {
@@ -30,6 +29,10 @@ label {
 	font-weight: 500;
 }
 
+.hoverbox_white:hover {
+	text-decoration: underline;
+}
+
 .blue_back {
 	background: #428bca;
 	border: 1px solid #428bca;
@@ -41,6 +44,10 @@ label {
 
 .text_black {
 	color: black;
+}
+
+.text_blue {
+	color: #428bca;
 }
 
 .margin_vertical_60px {
@@ -168,6 +175,10 @@ body {
 
 
 /* forms */
+
+.form_footer {
+	font-size: 5rem;
+}
 
 input {
 	margin-bottom: 30px;
