@@ -73,18 +73,11 @@ label {
 
 /* ~~~~~~~~~~~~~~~~~~~~ */
 
-/* media queries */
-
-@media screen and (max-width: 1200px) {
-	.info_column {
-		width: 80%;
-	}
-}
-
-
 
 /* site stylings */
 
+.bcontainer { width: 90%; margin: 0 auto; text-align: center; }
+.container { text-align: center; }
 body {
 	margin-top: 15px;
 	background-color: #CCCCFF; 
@@ -243,6 +236,30 @@ input {
 	margin-bottom: 20px;
 }
 
+
+@media screen and (min-width: 1000px)
+{
+	.small_device_shown { display: none; }	
+}  
+
+/* media queries for home page (mostly) */
+
+@media screen and (max-width: 600px) 
+{
+	.info_column1 { margin-top: -6rem; }
+	.header_img { display:none; }
+	.header-text { font-size: 3em; background: #428bca; }
+	body { margin: 0; }
+}
+
+
+/* media queries for directions page */
+@media screen and (max-width: 1000px)
+{
+	.small_device_hidden { display: none; } 
+	.info_column { width: 80%; margin: 20px auto; }
+	.small_device_shown: { display: block; }
+}
 
 /* overrides */
 
