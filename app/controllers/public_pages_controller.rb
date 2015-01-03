@@ -10,4 +10,5 @@ class PublicPagesController < ApplicationController
 
   def location
   end
+
 end

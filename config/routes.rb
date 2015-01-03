@@ -13,9 +13,11 @@ Rails.application.routes.draw do
   match 'dental_insurances', to: 'patients#dental_insurance', via: 'post'
   match 'dental_histories', to: 'patients#dental_history', via: 'post'
 
+  match 'lvd_employee_area77', to: 'private_pages#lakeview_emp_area77', via: 'get'
   
-
-  
+  get 'lvd_emp_loggin' => 'lvd_priv_sessions#new'
+  post 'lvd_emp_loggin' => 'lvd_priv_sessions#create'
+  delete 'lvd_emp_logout' => 'lvd_priv_sessions#destroy'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

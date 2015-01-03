@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141209204538) do
+ActiveRecord::Schema.define(version: 20150101213659) do
 
   create_table "dental_histories", force: true do |t|
     t.integer  "patient_id"
@@ -135,5 +135,12 @@ ActiveRecord::Schema.define(version: 20141209204538) do
 
   add_index "personals", ["patient_id", "created_at"], name: "index_personals_on_patient_id_and_created_at"
   add_index "personals", ["patient_id"], name: "index_personals_on_patient_id"
+
+  create_table "users", force: true do |t|
+    t.string   "name"
+    t.string   "password_digest"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

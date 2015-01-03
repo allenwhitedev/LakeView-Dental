@@ -38,6 +38,7 @@ group :production do
 end
 
 gem 'bootstrap_form', '2.2.0'
+gem 'bcrypt', '3.1.9'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

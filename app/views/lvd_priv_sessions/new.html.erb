@@ -1,0 +1,23 @@
+<% flash.each do |key, value| %>
+	<div class="text-center alert alert-<%= key %>"><%= value %></div>
+<% end %>
+
+<div class="container">
+
+<div class="well blue_back well_top text-center", id="formtop1">
+	<h3 id="patient_info_topper">Employees Only Sign In Area </h3>
+</div>
+	<div class='well'>
+	<%= bootstrap_form_for :lvd_priv_session, url: lvd_emp_loggin_path do |f| %>
+
+		
+		<%= f.text_field :name, placeholder: "Nombre..." %>
+		<br>
+		<%= f.password_field :password, placeholder: "Contraseña..." %>
+		<br>
+		<%= f.submit "Login", class: "btn btn-primary" %>
+		
+	<% end %>
+
+	</div>
+</div>

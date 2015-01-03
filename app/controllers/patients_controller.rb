@@ -1,6 +1,6 @@
 class PatientsController < ApplicationController
 
-
+default_scope -> { order('patients.name ASC') }
 
 
 def new
