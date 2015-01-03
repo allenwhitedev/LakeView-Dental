@@ -109,8 +109,9 @@ body {
 .form_footer { font-size: 5rem; }
 input { margin-bottom: 30px; }
 .form { max-width: 800px; }
-.old_form { background: grey; color: grey; }
+.old_form input { background: #B3B2B4; }
 .pipe { width: .5rem; margin: -20px auto -60px auto; }
+.formtip { color: grey; margin-bottom: 20px; }
 
 
 /* LOCATION PAGE */
