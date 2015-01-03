@@ -1,0 +1,16 @@
+<div class='container'>
+	<h1><%= button_to "< Back to Records", lvd_employee_area77_path, class: "sec_back", method: :get %></h1>
+	<div class='well well_top blue_back ptop'>
+		<%= @secpat.first_name %>
+		<%= @secpat.middle_initial %>
+		<%= @secpat.last_name %>
+	</div>
+	<div class="pshow">
+		
+	</div>
+</div>
+<style>
+	.ptop {font-size: 2em;}
+	.pshow {color: black;}
+	.sec_back {color: blue;}
+</style>

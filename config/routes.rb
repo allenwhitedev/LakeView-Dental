@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   match 'dental_histories', to: 'patients#dental_history', via: 'post'
 
   match 'lvd_employee_area77', to: 'private_pages#lakeview_emp_area77', via: 'get'
+  match 'lvd_employee_area88', to: 'private_pages#lakeview_emp_area88', via: 'get'
   
   get 'lvd_emp_loggin' => 'lvd_priv_sessions#new'
   post 'lvd_emp_loggin' => 'lvd_priv_sessions#create'
