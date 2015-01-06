@@ -5,8 +5,30 @@
 		<%= @secpat.middle_initial %>
 		<%= @secpat.last_name %>
 	</div>
-	<div class="pshow">
+	<div class="pshow well">
+		<h1>Patient Info</h1>
 		
+		<% for attribute in @sec_patient_info_attributes %>
+			<% if !@removed_attributes.include?(attribute[0]) %>	
+			<%= attribute[0] %>: <%= attribute[1] %>
+			<br>
+			<% end %>
+		<% end %>
+
+			<% for attribute in @sec_dental_insurance_attributes %>
+			<% if !@removed_attributes.include?(attribute[0]) %>	
+			<%= attribute[0] %>: <%= attribute[1] %>
+			<br>
+			<% end %>
+		<% end %>
+
+			<% for attribute in @sec_dental_history_attributes %>
+			<% if !@removed_attributes.include?(attribute[0]) %>	
+			<%= attribute[0] %>: <%= attribute[1] %>
+			<br>
+			<% end %>
+		<% end %>
+
 	</div>
 </div>
 <style>
