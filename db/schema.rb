@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150101213659) do
+ActiveRecord::Schema.define(version: 20150103200650) do
 
   create_table "dental_histories", force: true do |t|
     t.integer  "patient_id"
@@ -63,7 +63,6 @@ ActiveRecord::Schema.define(version: 20150101213659) do
     t.boolean  "account_owner_additional_insurance"
     t.string   "subscriber_name"
     t.date     "subscriber_birthdate"
-    t.integer  "subscriber_ss"
     t.string   "subsriber_relationship_to_patient"
     t.string   "subscriber_insurance_company"
     t.integer  "subscriber_group_number"
@@ -93,7 +92,6 @@ ActiveRecord::Schema.define(version: 20150101213659) do
     t.string   "employer_or_school_phone"
     t.string   "spouse_name"
     t.date     "spouse_birthdate"
-    t.integer  "spouse_ss"
     t.string   "spouse_employer"
     t.string   "referrer"
     t.datetime "created_at"
@@ -109,32 +107,6 @@ ActiveRecord::Schema.define(version: 20150101213659) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  create_table "personals", force: true do |t|
-    t.string   "address"
-    t.string   "email"
-    t.string   "city"
-    t.string   "state"
-    t.integer  "zipcode"
-    t.boolean  "sex"
-    t.date     "birthdate"
-    t.string   "relationship_status"
-    t.string   "employer_or_school"
-    t.string   "occupation"
-    t.string   "employer_or_school_address"
-    t.string   "employer_or_school_phone"
-    t.string   "spouse_name"
-    t.date     "spouse_birthdate"
-    t.integer  "spouse_ss"
-    t.string   "spouse_employer"
-    t.string   "referrer"
-    t.integer  "patient_id"
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
-  end
-
-  add_index "personals", ["patient_id", "created_at"], name: "index_personals_on_patient_id_and_created_at"
-  add_index "personals", ["patient_id"], name: "index_personals_on_patient_id"
 
   create_table "users", force: true do |t|
     t.string   "name"

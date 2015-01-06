@@ -1,6 +1,6 @@
 <div class="container margin_vertical_60px form">
 <div class="well blue_back well_top text-center", id="formtop4"><h3 id="dental_history_topper">Dental History</h3></div>
-<div class="text-center text_black well well_body" id="hide_me4 form_four">
+<div class="text-center text_black well well_body" id="form_four">
 
 	<%= bootstrap_form_for @current_patient.build_dental_history(patient_id: @current_patient.id), layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-10", id: 'fourth_form', remote: true do |f| %>
 

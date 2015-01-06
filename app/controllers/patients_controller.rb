@@ -22,7 +22,7 @@ end
 
 def patient_info
 	@current_patient = Patient.find(params[:current_patient_id])
-	if @current_patient.create_patient_info!
+	if @current_patient.create_patient_info! && @current_patient.patient_info.save
 		respond_to do |format|
 			format.html { @current_patient }
 			format.js { @current_patient }
