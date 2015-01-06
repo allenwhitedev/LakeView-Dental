@@ -4,11 +4,8 @@ class PatientInfo < ActiveRecord::Base
 
 	attributes = ["address", "email", "city", "state", "zipcode", "sex", "birthdate", "relationship_status", "employer_or_school", "occupation", "employer_or_school_address", "employer_or_school_phone", "spouse_name", "spouse_birthdate", "spouse_employer", "referrer"] 
 
-	#attribute = "address"
-	#validates_presence_of :address
-
-	# attributes.each do |attribute|
-	# 	validates_presence_of attribute
-	# end
+	attributes.each do |attribute|
+		validates_presence_of attribute
+	end
 
 end

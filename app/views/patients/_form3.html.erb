@@ -11,7 +11,7 @@
 			<%= f.text_field :account_owner_to_patient_relationship %>
 			<%= f.text_field :account_owner_insurance_company %>
 			<%= f.number_field :account_owner_group_number %>
-			<%= f.check_box :account_owner_additional_insurance %>
+			<%= f.check_box :account_owner_additional_insurance, {}, 'true', 'false' %>
 
 			<%= f.text_field :subscriber_name %>
 			<%= f.date_field :subscriber_birthdate %>
