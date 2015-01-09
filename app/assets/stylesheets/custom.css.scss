@@ -156,9 +156,14 @@ input { margin-bottom: 30px; }
 
 @media screen and (max-width: 600px) 
 {
+	#jmbotron { display: none; }
 	.info_column1 { margin-top: -6rem; }
 	.header_img { display:none; }
-	.header-text { font-size: 3em; background: #428bca; }
+	.header-text { 
+		font-size: 3em; 
+		background: #428bca;
+		margin-bottom: 10px; 
+	}
 	body { margin: 0; }
 }
 
