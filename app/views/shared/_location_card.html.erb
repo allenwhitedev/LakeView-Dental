@@ -1,4 +1,8 @@
-<div class="info_column well blue_back text-center">
+<% unless current_page?(root_path) %>
+	<div class="info_column well blue_back text-center smaller_card">
+<% else %>
+	<div class="info_column well blue_back text-center">
+<% end %>
 	
 	<h2>Get Directions</h2>
 	

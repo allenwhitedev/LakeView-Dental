@@ -7,7 +7,7 @@ Open: Monday - Thursday from 9am - 5pm
   <div class="bcontainer">
   
   <!-- Services card for larger screens -->      
-  <%= link_to about_path, class: "small_device_hidden" do %>
+  <%= link_to services_path, class: "small_device_hidden" do %>
     <%= render 'shared/services_card' %>
   <% end %>
 
@@ -18,7 +18,7 @@ Open: Monday - Thursday from 9am - 5pm
   <% end %>
 
   <!-- Services card for smaller screens -->
-  <%= link_to about_path, class: "small_device_shown" do %>
+  <%= link_to services_path, class: "small_device_shown" do %>
    <%= render 'shared/services_card' %>
   <% end %>
 

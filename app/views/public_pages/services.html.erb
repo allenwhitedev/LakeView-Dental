@@ -1,0 +1,25 @@
+ 
+<header class="extra_info well lblue_back text-center">
+  <h1>LakeView Dental Services</h1>
+</header>
+
+ <div class="bcontainer">
+  
+  <!-- Services card for larger screens -->      
+  <%= link_to location_path, class: "small_device_hidden" do %>
+    <%= render 'shared/location_card' %>
+  <% end %>
+
+  <%= render 'shared/services_list_card' %>
+
+  <%= link_to patient_record_path do %>
+   <%= render 'shared/appointment_card' %>
+  <% end %>
+
+  <!-- Services card for smaller screens -->
+  <%= link_to location_path, class: "small_device_shown" do %>
+   <%= render 'shared/appointment_card' %>
+  <% end %>
+
+</div>
+<style type="text/css">body {margin:0;}</style>

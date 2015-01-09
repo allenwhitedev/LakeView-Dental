@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :patients
 
   match '/home', to: 'public_pages#home', via: 'get'
-  match '/about', to: 'public_pages#about', via: 'get'
+  match '/services', to: 'public_pages#services', via: 'get'
   match '/location', to: 'public_pages#location', via: 'get'
 
   match 'patient_record', to: 'patients#new', via: 'get'
