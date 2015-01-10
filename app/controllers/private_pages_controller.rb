@@ -23,7 +23,7 @@ def lakeview_emp_area88
 
 	@sec_dental_insurance_attributes = []
 	@secpat.dental_insurance.attributes.each do |attribute|
-	@sec_dental_insurance_attributes.push(attribute)
+		@sec_dental_insurance_attributes.push(attribute)
 	end
 
 	@sec_dental_history_attributes = []

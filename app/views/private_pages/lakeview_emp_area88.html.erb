@@ -1,38 +1,56 @@
 <div class='container'>
+
 	<h1><%= button_to "< Back to Records", lvd_employee_area77_path, class: "sec_back", method: :get %></h1>
+
 	<div class='well well_top blue_back ptop'>
 		<%= @secpat.first_name %>
 		<%= @secpat.middle_initial %>
 		<%= @secpat.last_name %>
 	</div>
 	<div class="pshow well">
-		<h1>Patient Info</h1>
 		
-		<% for attribute in @sec_patient_info_attributes %>
-			<% if !@removed_attributes.include?(attribute[0]) %>	
-			<%= attribute[0] %>: <%= attribute[1] %>
-			<br>
-			<% end %>
-		<% end %>
+		<table class="table pinfo_table">
+		<th>Patient Info</th>
 
+			<% for attribute in @sec_patient_info_attributes %>
+				<% if !@removed_attributes.include?(attribute[0]) %>	
+				<tr>
+				<td><%= attribute[0] %></td> <td><%= attribute[1] %></td>
+				</tr>
+				
+				<% end %>
+			<% end %>
+
+
+			
+			<th>Dental Insurance</th>
 			<% for attribute in @sec_dental_insurance_attributes %>
-			<% if !@removed_attributes.include?(attribute[0]) %>	
-			<%= attribute[0] %>: <%= attribute[1] %>
-			<br>
+				<% if !@removed_attributes.include?(attribute[0]) %>
+				<tr>	
+					<td><%= attribute[0] %></td> <td><%= attribute[1] %></td>
+				</tr>
+				
 			<% end %>
-		<% end %>
+			<% end %>
 
+			<th>Dental History</th>
 			<% for attribute in @sec_dental_history_attributes %>
-			<% if !@removed_attributes.include?(attribute[0]) %>	
-			<%= attribute[0] %>: <%= attribute[1] %>
-			<br>
-			<% end %>
-		<% end %>
+				<% if !@removed_attributes.include?(attribute[0]) %>
+				<tr>	
+					<td><%= attribute[0] %></td> <td><%= attribute[1] %></td>
+				</tr>	
+					
+				<% end %>
+			<% end %>	
+		</table>
 
 	</div>
 </div>
 <style>
 	.ptop {font-size: 2em;}
 	.pshow {color: black;}
-	.sec_back {color: blue;}
+	.sec_back {color: #428bca; border: none; background: none;}
+	.sec_back:hover {border: 3px solid #428bca;}
+	th { font-size: 2rem; }
+	.pinfo_table { font-size: 1.5em; }
 </style>
