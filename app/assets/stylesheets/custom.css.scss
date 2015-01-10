@@ -147,6 +147,19 @@ input { margin-bottom: 30px; }
 .checkbox_last { margin-bottom: 20px; }
 
 
+/* SERVICES PAGE */
+
+.services_list { font-size: 2.25rem; }
+.service:hover { text-decoration: underline; }
+
+/* MEDIA QUERIES FOR SERVICES PAGE */
+
+@media screen and (max-width: 600px) 
+{
+	.services_list { font-size: 1.75rem; }
+}
+
+
 /* MEDIA QUERIES FOR HOME PAGE (MOSTLY) */
 
 @media screen and (min-width: 1000px)
